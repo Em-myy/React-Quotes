@@ -1,80 +1,98 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .app-container {
-    width: 100vw;
-    height: 100vh;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #quote-box {
-    background-color: #fff;
-    width: 60%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: #fff;
+  width: 90%;
+  max-width: 800px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quote-component-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 #text {
-    text-align: center;
-    font-size: 40px;
-    padding-top: 5px;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 5px;
+  word-wrap: break-word;
+  white-space: normal;
 }
 
 #author {
-    font-size: 25px;
-    margin-left: 550px;
-    margin-top: 10px;
+  font-size: 25px;
+  margin-left: 550px;
+  margin-top: 10px;
 }
 
 .quote-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
 }
-
 
 #new-quote {
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
-    color: #ffffff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  color: #ffffff;
 }
 
-
 .first-icon {
-    width: 50px;
-    height: auto;
-    cursor: pointer;
+  width: 50px;
+  height: auto;
+  cursor: pointer;
 }
 
 .second-icon {
-    width: 50px;
-    height: auto;
-    margin-left: 10px;
-    cursor: pointer;
+  width: 50px;
+  height: auto;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .quote-icon {
-    width: 20px;
-    height: auto;
+  width: 20px;
+  height: auto;
+}
+@media (max-width: 850px) {
+  #quote-box {
+    width: 90%;
+    min-width: unset;
+  }
+  #text {
+    font-size: 30px;
+    padding-top: 10px;
+    overflow-wrap: break-word;
+  }
 }
